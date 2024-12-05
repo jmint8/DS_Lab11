@@ -64,9 +64,72 @@ public class TestTree
 	
 	public void run()
 	{
+		final String ifia = "if yes is the answer to ";
+		
+	    final String DEER = "Deer";
+	    final String Deer_Q = "does it have antlers?";
+	    final String Chair = "Chair";
+	    final String ChairQ = "does it have 4 legs?";
 		
 		check(Strings.IS_IT_ALIVE);
         say("Y");
+        check(Strings.IS_IT_A+" "+Strings.DUCK+"?");
+        say("Y");
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+        check(Strings.IS_IT_A+" "+Strings.ROCK+"?");
+        say("Y");
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("Y");
+        check(Strings.IS_IT_A+" "+Strings.DUCK+"?");
+        say("N");
+        check(Strings.WHAT_IS_THE_ANSWER);
+        say(DEER);
+        check(Strings.NEW_QUESTION+Strings.DUCK+" and a "+DEER);
+        say(Deer_Q);
+        check(ifia+Deer_Q+Strings.IS_IT_A+DEER);
+        say("Y");
+        check(Strings.THANKS);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("Y");
+        check(Strings.IS_IT_A+" "+Strings.DUCK+"?");
+        say("N");
+        check(Deer_Q);
+        say("Y");
+        check(Strings.IS_IT_A+" "+DEER);
+        say("Y");
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+        check(Strings.IS_IT_A+" "+Strings.ROCK+"?");
+        say("N");
+        check(Strings.WHAT_IS_THE_ANSWER);
+        say(Chair);
+        check(Strings.NEW_QUESTION+Strings.ROCK+" and a "+Chair);
+        say(ChairQ);
+        check(ifia+ChairQ+Strings.IS_IT_A+Chair);
+        say("Y");
+        check(Strings.THANKS);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+
+        
+        
         //now what? Think of all the input and outputs here...
 		
 
